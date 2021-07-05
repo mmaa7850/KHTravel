@@ -1,0 +1,144 @@
+.container {
+    max-width: 1024px;
+}
+a {
+    text-decoration: none;
+}
+
+
+/*---------header-------------*/
+.header {
+    & .container {
+        background-image: url(https://upload.cc/i1/2021/07/05/tZjWnd.png);
+        background-repeat: no-repeat;
+        height: 380px;
+        font-family: PingFangTC-Regular;
+        & h1 {
+            letter-spacing: 3.89px;
+        }
+        & select {
+            width: 452px;
+            border: 3px solid $white;
+            border-radius: 3px;
+            appearance: none;
+            background: url(https://upload.cc/i1/2021/07/05/4uoJjW.png) no-repeat 95% 50% transparent;
+            background-color: rgba($color: $white, $alpha: 0.7);
+            padding: 12px 10px;
+        }
+    }
+    & .hotDistrict {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: -28px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        font-family: AppleSystemUIFont;
+        background-color: $white;
+        & h3 {
+            font-size: 18px;
+        }
+    }
+}
+
+/*---------section-------------*/
+.section {
+    & .container {
+        position: relative;
+        & hr {
+            width: 900px;
+            margin: 0 auto;
+            border: 1px dashed $primary;
+        }
+        & i {
+            color: $primary;
+            position: absolute;
+            top: -14px;
+            right: 50%;
+            border: 2px solid $primary;
+            background-color: $white;
+            border-radius: 100%;
+            padding: 2px 8px 8px;
+        }
+    }
+
+    & .viewPoint {
+        & .card-header {
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 155px;
+            & h3 {
+                font-size: 24px;
+            }
+            & h4 {
+                font-size: 16px;
+            }
+        }
+        & .card-body {
+            & .phone {
+                padding-left: 3px;
+            }
+        }
+        & .tag {
+            position: absolute;
+            bottom: 19px;
+            right: 24px;
+            & .tagText {
+                visibility: hidden;
+                letter-spacing: 1px;
+                border-radius: 5px;
+                position: absolute;
+                width: 150%;
+                top: 150%;
+                left: -10%;
+                z-index: 1;
+                opacity: 0.9;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: transparent transparent $primary transparent;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover .tagText {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+/*---------pageBtn-------------*/
+// .pageBtn {
+//     width: 1024px;
+//     list-style: none;
+//     & a {
+//         border: 1px solid $primary;
+//         padding: 8px;
+//         &:hover {
+//             color: $white;
+//             background: $primary;
+//         }
+//     }
+//     & .active {
+//         color: $white;
+//         background: $primary;
+//     }
+// }
+
+/*---------footer-------------*/
+.footer {
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+}
+
+.goTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
